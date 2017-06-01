@@ -1,0 +1,135 @@
+/* ==========================================================================
+   [Start] All Style Form
+========================================================================== */
+input[type='text'],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea, select {
+    color: #626262;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 17px;
+    border: 1px solid #dcdddd;
+    width: 100%;
+    @include border-radius(0);
+    line-height: normal;
+}
+
+textarea {
+    height: 240px;
+    max-height: 240px;
+    max-width: 100%;
+}
+input[type='text']:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+    border: 1px solid $link_color;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+/** Contact Form 7 */
+.wpcf7-form {
+    input[type='text'],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    textarea, select {
+        padding: 13px 40px;
+        @include border-radius(0);
+        margin-bottom: 5px;
+		font-size: 14px;
+		@include breakpoint-max(640px){
+			padding: 13px 15px;
+		}
+    }
+    textarea {
+        height: 300px;
+		margin-bottom: 30px;
+		@include breakpoint-max(640px){
+			height: 150px;
+			margin-bottom: 20px;
+		}
+    }
+	.mercury-contact-form {
+		>p {
+			display: inline-block;
+			width: calc(50% - 15px);
+			margin-bottom: 25px;
+			@include breakpoint-max(1024px){
+				display: block;
+				width: 100%;
+			}
+		}
+		.name {
+			margin-right: 13px;
+			@include breakpoint-max(1024px){
+				margin-right: 0;
+			}
+		}
+		.email {
+			margin-left: 13px;
+			@include breakpoint-max(1024px){
+				margin-left: 0;
+			}
+		}
+	}
+	.zo-button-wraper {
+		text-align: center;
+	}
+	.wpcf7-submit {
+		font-size: 12px;
+		font-weight: 400;
+		height: 50px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		width: 100%;
+	}
+}
+
+.post-password-form input[type="submit"] {
+	border: 1px solid $primary_color;
+	background: $primary_color;
+	color: #fff;
+	&:hover {
+		background: #fff;
+		color: $primary_color;
+	}
+}
+/* ==========================================================================
+   [End] All Style Form
+========================================================================== */
