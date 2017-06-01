@@ -51,3 +51,81 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
 
 /* =Reset
 -------------------------------------------------------------- */
+
+p, span, li, input, button {
+	font-family: Montserrat, Arial, Helvetica, sans-serif !important;
+}
+#zo-header-logo {
+	display: none;
+}
+.top-logo {
+	position: absolute;
+	left: 50px;
+	top: 40px;
+	visibility: visible;
+	display: block;
+	width: 121px;
+	z-index: 900000;
+}
+.top-logo > div:first-child {
+	background: #FDEDAC;
+	font-size: 20px;
+	color: #23297A;
+	padding: 3px 12px 5px;
+	line-height: 1;
+	letter-spacing: 4.5px;
+	font-weight: 900;
+}
+.top-logo > div:last-child {
+	background: #23297A;
+	font-size: 17px;
+	color: #FDEDAC;
+	padding:  6px 12px 3px;
+	line-height: 1;
+}
+body .nav-menu {
+	padding-right: 30px;
+}
+body .wpcf7-form .mercury-contact-form .name {
+	margin-right: 0;
+}
+body .wpcf7-form .mercury-contact-form > p {
+	width: 100%;
+	margin-bottom: 15px;
+}
+body .wpcf7-form .mercury-contact-form .email {
+	margin-left: 0;
+}
+.mercury-contact-form input + span {
+	display: none !important;
+}
+.unit-test #main {
+	margin-bottom: 0 !important;
+}
+.footer-social {
+	display: none;
+}
+#footer {
+	display: table;
+	width: 100%;
+	background: #000;
+	color: #ccc;
+	padding: 10px 0;
+	margin-top: -2px;
+}
+#zo-footer-copyright {
+	display: none;
+}
+#back_to_top span {
+	outline: 1px solid #777;
+}
+.vc_inner img {
+	padding: 0 20px;
+}
+a[href="#callToMaster"] {
+	color: #FFF;
+}
+a[href="#callToMaster"]:hover {
+	color: #FFF;
+	text-shadow: 1px 1px 2px #427388;
+}
