@@ -129,3 +129,182 @@ a[href="#callToMaster"]:hover {
 	color: #FFF;
 	text-shadow: 1px 1px 2px #427388;
 }
+#rightButton {
+	position: fixed;
+	right: 1px;
+	top: 50%;
+	z-index: 900001;
+	padding: 5px;
+	background: #75B62E;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding-bottom: 2px;
+	display: none;
+}
+#rightButton span {
+	cursor: pointer;
+}
+#rightButton i {
+	color: #FFF;
+}
+#page {
+	position: relative;
+}
+#rightButton .fa-calculator {
+	font-size: 15px;
+	position: relative;
+	top: -2.3px;
+	left: 0.5px;
+} 
+#rightButton .fa-envelope-o {
+	font-size: 15px;
+	position: relative;
+	top: -2.3px;
+	left: 0.5px;
+}
+#rightButton .fa-times {
+	position: absolute;
+	top: -15px;
+	right: 0;
+	color: #75B62E;
+	cursor: pointer;
+}
+#rightButton .title {
+	position: absolute;
+	right: 55px;
+	background: #FFF;
+	padding: 5px 10px;
+	border-radius: 7px;
+	width: 160px;
+	font-size: 11px;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+	display: none;
+	border: 1px solid #75B62E;
+}
+#paranja, #thanks, #error {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 16px;
+	background-color: rgba(1, 1, 1, 0.725);
+	z-index: 10000;
+	overflow: auto;
+}
+#thanks:target, #error:target {
+	display: block;
+}
+#thanks > div, #error > div {
+	width: 200px;
+	height: 105px;
+	margin: auto;
+	text-align: center;
+	background: #ccc;
+	z-index: 10001;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 16px;
+	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(255,255,255, .5);
+	line-height: 1.2;
+	font-size: 14px;
+}
+#window {
+	width: 400px;
+	height: 355px;
+	margin: auto;
+	display: none;
+	background: #4ebb13;
+	z-index: 10001;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 16px;
+	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(255, 255, 255, .5);
+}
+#window h4 {
+	text-align: center;
+	font-family: sans-serif;
+	color: #fff;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	font-size: 18px;
+}
+#window > p > span {
+	position: absolute;
+	top: 10px;
+	right: 17px;
+	color: #555;
+	font-size: 15px;
+	cursor: pointer;
+	font-style: normal;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: -webkit-transform 1s;
+	transition: -webkit-transform 1s;
+	transition: transform 1s;
+	transition: transform 1s, -webkit-transform 1s;
+}
+#window form > i {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+	transition: all 1s;
+}
+#window form > i:hover {
+	transform: rotate(180deg);
+}
+#thanks i, #error i {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	transition: all 1s;
+	color: #fff;
+}
+#window form button {
+	width: 200px;
+	display: block;
+	padding: 8px;
+	margin-left: auto;
+	border-radius: 7px 0;
+	background: #4ebb13;
+	color: #fff;
+	border: 2px solid;
+	position: relative;
+	top: 3px;
+}
+#window form button:hover {
+	background: #3a8b0e;
+}
+#window form .recaptcha-wrap {
+	position: absolute;
+	left: 0;
+	top: -15px;
+	clip: rect(15px 160px 59px auto);
+}
+#window form .form-group.captcha {
+	position: relative;
+}
+#window  textarea {
+	height: auto;
+}
+#window input[type='text'], 
+#window input[type='email'] {
+	height: 26px;
+	line-height: 26px;
+	font-size: 14px;
+}
+#window .form-group {
+	margin-bottom: 11px;
+}

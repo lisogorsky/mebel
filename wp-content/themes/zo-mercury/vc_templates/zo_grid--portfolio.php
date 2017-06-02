@@ -31,7 +31,7 @@
 	<?php if ( isset($atts['filter']) && $atts['filter'] == 1 ): ?>
 		<div class="zo-grid-filter ">
 			<ul class="zo-filter-category list-unstyled list-inline">
-				<li><a class="active" href="#" data-group="all"><?php esc_html_e("All", 'zo-mercury');?></a></li>
+				<li><a class="active" href="#" data-group="all"><?php esc_html_e("Все фото", 'zo-mercury');?></a></li>
 				<?php
 					$posts = $atts['posts'];
 					$query = $posts->query;
