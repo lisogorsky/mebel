@@ -21,28 +21,31 @@
 
 		$('.formPopUp').click(function(e) { 
 			e.preventDefault();
-			$('#paranja, #window').slideDown(555); 
 			if ($(this).hasClass('zamer')) {
 				$('#window > div').hide(10);
 				$('#window').css({'width':'400px', 'height':'355px'});
 				$('#window form').show(10);
-				$('form[name="feedback"] > h4').text('Вызовите замерщика!')
+				$('form[name="feedback"] > h4').text('Вызовите замерщика!');
+				$('#paranja, #window').slideDown(555); 
 			}
 			else if ($(this).hasClass('guaranty')) {
 				$('#window form, #window > div').hide(10);
-				$('#window').css({'width':'600px', 'height':'355px'});
+				$('#window').css({'width':'515px', 'height':'470px'});
 				$('#window .guaranty-window').show(10);
+				$('#paranja, #window').slideDown(555); 
 			}
 			else if ($(this).hasClass('sale')) {
 				$('#window form, #window > div').hide(10);
-				$('#window').css({'width':'400px', 'height':'255px'});
+				$('#window').css({'width':'400px', 'height':'185px'});
 				$('#window .sale-window').show(10);
+				$('#paranja, #window').slideDown(555); 
 			}
 			else {
 				$('#window > div').hide(10);
 				$('#window').css({'width':'400px', 'height':'355px'});
 				$('#window form').show(10);
-				$('form[name="feedback"] > h4').text('Закажите бесплатную консультацию!')
+				$('form[name="feedback"] > h4').text('Закажите бесплатную консультацию!');
+				$('#paranja, #window').slideDown(555); 
 			}
 		})
 

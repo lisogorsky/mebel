@@ -239,9 +239,11 @@ a[href="#callToMaster"]:hover {
 #window .guaranty-window h4 {
 	margin-bottom: 0;
 	text-align: left;
+	font-size: 16px;
 }
 #window .guaranty-window ul, #window .guaranty-window ol {
 	margin-bottom: 0;
+	margin-top: 0;
 }
 #window > div {
 	display: none;
