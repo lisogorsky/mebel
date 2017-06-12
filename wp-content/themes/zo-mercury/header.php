@@ -53,6 +53,7 @@
 			</div>
 		</div>
 		<header id="masthead" class="site-header">
+			<h2>ДВЕРИ ИЗ МАССИВА</h2>
 			<a href="/"><div class="top-logo">
 				<div>ДВЕРЬ</div>
 				<div>КОМПЛЕКТ</div>
