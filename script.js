@@ -1,13 +1,6 @@
 (function($) {
 	$(document).ready( function () {
 
-		$('a[href="#callToMaster"]').click(function () {
-			elementClick = $(this).attr("href");
-			destination = $(elementClick).offset().top;
-			$("html, body").animate({scrollTop: destination}, 2000);
-			return false;
-		});
-
 		window.onscroll = function () {
 			if ( window.pageYOffset > 200 ) {
 				$('#rightButton').show(1000);
@@ -26,8 +19,31 @@
 			$(this).parent().prev().hide();	
 		})
 
-		$('.formPopUp').click(function() { 
+		$('.formPopUp').click(function(e) { 
+			e.preventDefault();
 			$('#paranja, #window').slideDown(555); 
+			if ($(this).hasClass('zamer')) {
+				$('#window > div').hide(10);
+				$('#window').css({'width':'400px', 'height':'355px'});
+				$('#window form').show(10);
+				$('form[name="feedback"] > h4').text('Вызовите замерщика!')
+			}
+			else if ($(this).hasClass('guaranty')) {
+				$('#window form, #window > div').hide(10);
+				$('#window').css({'width':'600px', 'height':'355px'});
+				$('#window .guaranty-window').show(10);
+			}
+			else if ($(this).hasClass('sale')) {
+				$('#window form, #window > div').hide(10);
+				$('#window').css({'width':'400px', 'height':'255px'});
+				$('#window .sale-window').show(10);
+			}
+			else {
+				$('#window > div').hide(10);
+				$('#window').css({'width':'400px', 'height':'355px'});
+				$('#window form').show(10);
+				$('form[name="feedback"] > h4').text('Закажите бесплатную консультацию!')
+			}
 		})
 
 		var a = location.hash;
@@ -45,6 +61,7 @@
 			},6000);
 		}
 		
+
 
 	});
 })(jQuery);

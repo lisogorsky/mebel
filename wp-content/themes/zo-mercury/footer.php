@@ -46,6 +46,42 @@
 				<button type="submit">Отправить</button>
 			</div>
 		</form>
+		<div class="guaranty-window">
+			<div>
+				<i class="fa fa-times" onclick="jQuery('#window').fadeOut(1000); jQuery('#paranja').fadeOut(1000);"></i>
+				<h4>Гарантия 3 года распростроняется на дверные комплекты:</h4>
+				Двери производства ф-ки АРБОЛЕДА с системой АРБОТЕК *.
+				<h4>Гарантия 2 года распростроняется на дверные комплекты:</h4>
+				Двери из массива дуба, ольхи.
+				<h4>Гарантия 1 год распростроняется на дверные комплекты:</h4>
+				Двери из массива сосны.
+				<h4>Гарантия распростроняется в случаях:</h4>
+				<ul>
+					<li>расстыковки элементов дверного блока;</li>
+					<li>дефектов лако-красочного покрытия;</li>
+					<li>деформация дверного полотна более чем на 4 мм.</li>
+				</ul>
+				<h4>Гарантия не распростроняется в случаях:</h4>
+				<ol>
+					<li>Неправильной установки двери;</li>
+					<li>Нарушения условий эксплуатации дверей:</li>
+					<ul>
+						<li>повышенная, пониженная температура в помещении, резкий перепад температур;</li>
+						<li>повышенная, пониженная влажность воздуха в помещении;</li>
+						<li>механические повреждения (удары, сколы);</li>
+						<li>воздействия химических препоратов;</li>
+						<li>прямое попадание солнечных лучей, воздействие тепловых приборов, печей, каминов.</li>
+					</ul>
+				</ol>
+			</div>
+		</div>
+		<div class="sale-window">
+			<div>
+				<h4>Скидки и акции</h4>
+				<i class="fa fa-times" onclick="jQuery('#window').fadeOut(1000); jQuery('#paranja').fadeOut(1000);"></i>
+				<p>Текст окна скидки и акции. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate rerum natus dolores debitis delectus dicta, culpa nemo optio quisquam vero voluptates dignissimos mollitia aut ex quas, nam eligendi. Accusantium, vitae?</p>
+			</div>
+		</div>
 	</div>
 </div>
 

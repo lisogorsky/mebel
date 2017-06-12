@@ -44,7 +44,7 @@
 			</div>
 			<div>
 				<div class="title">Вызвать замерщика</div>
-				<a href="#callToMaster">
+				<a class="formPopUp zamer">
 					<span class="fa-stack fa-lg">
 						<i class="fa fa-square-o fa-stack-2x"></i>
 						<i class="fa fa-calculator fa-stack-1x"></i>
@@ -57,6 +57,31 @@
 				<div>ДВЕРЬ</div>
 				<div>КОМПЛЕКТ</div>
 			</div></a>
+			<div class="formPopUp guaranty">гарантия 3 года *</div>
+			<div class="formPopUp sale">СКИДКИ И АКЦИИ <span>*</span> <i class="fa fa-gift fa-2x"></i></div>
+			<div id="basket">
+				<img src="/wp-content/themes/zo-mercury/assets/images/basket.jpg" alt="">
+			</div>
+			<div id="header-img">
+				<div>
+					<a href="#">
+						<img src="/wp-content/themes/zo-mercury/assets/images/img-header-1.jpg" alt="">
+						<p>ДВЕРИ МАССИВ ДУБА</p>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="/wp-content/themes/zo-mercury/assets/images/img-header-2.jpg" alt="">
+						<p>ДВЕРИ МАССИВ ОЛЬХИ</p>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="/wp-content/themes/zo-mercury/assets/images/img-header-3.jpg" alt="">
+						<p>ДВЕРИ МАССИВ СОСНЫ</p>
+					</a>
+				</div>
+			</div>
 			<?php zo_mercury_header(); ?>
 		</header>
 		<?php zo_mercury_page_title(); ?>
