@@ -1,4 +1,7 @@
-
+body {
+    overflow-x: hidden;
+    min-width: 320px;
+}
 p, span, li, input, button {
 	font-family: Montserrat, Arial, Helvetica, sans-serif !important;
 }
@@ -392,8 +395,11 @@ div#zo-page-element-wrap {
 	font-weight: bold;
 }
 .contacts-click em {
-	color: #23297A;
-	font-style: normal;
+    color: #23297A;
+    font-style: normal;
+    font-size: 18px;
+    padding-top: 7px;
+    display: inline-block;
 }
 .contacts-click .wpb_wrapper {
 	padding-top: 10px;
@@ -401,9 +407,38 @@ div#zo-page-element-wrap {
 	box-shadow: 0 0 5px rgba(0,0,0,.5);
 }
 .contacts-click .wpb_wrapper > p {
-	min-height: 59px;
+	min-height: 72px;
 	cursor: pointer;
 }
-.contacts-click .wpb_wrapper > p:hover {
+.map1 .wpb_wrapper > p {
 	background: #BFBFBF;
+}
+.map-contacts {
+	display: none;
+}
+#map1 {
+	display: block;
+}
+.row.vc_row > .contacts-click:last-child .wpb_wrapper i {
+	background: #FFC;
+	color: #23297A;
+	font-style: normal;
+	font-size: 21px;
+	display: block;
+	line-height: 36px;
+	min-height: 36px;
+}
+.row.vc_row > .contacts-click:last-child .wpb_wrapper br {
+	display: none;
+}
+.row.vc_row > .contacts-click:last-child .wpb_wrapper em {
+	display: block;
+	background: #23297A;
+	color: #FFC;
+	padding-top: 0;
+    line-height: 36px;
+    min-height: 36px;
+}
+.row.vc_row > .contacts-click:last-child .wpb_wrapper > p:hover {
+	cursor: default;
 }

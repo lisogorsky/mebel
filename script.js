@@ -64,7 +64,24 @@
 			},6000);
 		}
 		
-
+		$('.map1').click(function() {
+			$('.map2 .wpb_wrapper > p, .map3 .wpb_wrapper > p').css('background','#fff');
+			$('.map1 .wpb_wrapper > p').css('background','#BFBFBF');
+			$('#map2, #map3').fadeOut(777);
+			$('#map1').fadeIn(777);
+		})
+		$('.map2').click(function() {
+			$('.map1 .wpb_wrapper > p, .map3 .wpb_wrapper > p').css('background','#fff');
+			$('.map2 .wpb_wrapper > p').css('background','#BFBFBF');
+			$('#map1, #map3').fadeOut(777);
+			$('#map2').fadeIn(777);
+		})
+		$('.map3').click(function() {
+			$('.map1 .wpb_wrapper > p, .map2 .wpb_wrapper > p').css('background','#fff');
+			$('.map3 .wpb_wrapper > p').css('background','#BFBFBF');
+			$('#map1, #map2').fadeOut(777);
+			$('#map3').fadeIn(777);
+		})
 
 	});
 })(jQuery);
