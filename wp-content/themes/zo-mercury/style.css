@@ -365,9 +365,6 @@ div#zo-page-element-wrap {
 	top: 30px;
 	left: 50px;
 }
-body.home #masthead > h2 {
-	display: none;	
-}
 body.home #header-img {
 	display: -webkit-box;
 	display: -ms-flexbox;
