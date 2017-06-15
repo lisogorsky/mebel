@@ -63,7 +63,7 @@
 			<div id="basket">
 				<img src="/wp-content/themes/zo-mercury/assets/images/basket.jpg" alt="">
 			</div>
-			<div id="header-img">
+			<!--<div id="header-img">
 				<div>
 					<a href="#">
 						<img src="/wp-content/themes/zo-mercury/assets/images/img-header-1.jpg" alt="">
@@ -82,7 +82,7 @@
 						<p>ДВЕРИ МАССИВ СОСНЫ</p>
 					</a>
 				</div>
-			</div>
+			</div>-->
 			<?php zo_mercury_header(); ?>
 		</header>
 		<?php zo_mercury_page_title(); ?>
